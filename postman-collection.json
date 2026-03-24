@@ -1,0 +1,39 @@
+{
+ "info": {
+  "name": "API Testing Portfolio",
+  "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+ },
+ "item": [
+  {
+   "name": "Get All Posts",
+   "request": {
+    "method": "GET",
+    "header": [],
+    "url": {
+     "raw": "https://jsonplaceholder.typicode.com/posts",
+     "protocol": "https",
+     "host": ["jsonplaceholder", "typicode", "com"],
+     "path": ["posts"]
+    }
+   }
+  },
+  {
+   "name": "Create Post",
+   "request": {
+    "method": "POST",
+    "header": [],
+    "body": {
+     "mode": "raw",
+     "raw": "{\n    \"title\": \"QA Test\",\n    \"body\": \"Testing API\",\n    \"userId\": 1\n}",
+     "options": { "raw": { "language": "json" } }
+    },
+    "url": {
+     "raw": "https://jsonplaceholder.typicode.com/posts",
+     "protocol": "https",
+     "host": ["jsonplaceholder", "typicode", "com"],
+     "path": ["posts"]
+    }
+   }
+  }
+ ]
+}
